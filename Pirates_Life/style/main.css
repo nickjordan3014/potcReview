@@ -1,0 +1,284 @@
+/*imports normalize*/
+@import "normalize.css";
+
+/*links*/
+a:link {
+  text-decoration: none;
+  color:white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*links in the body*/
+.body {
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+/*images*/
+img {
+  width: 95%;
+  display: block;
+  position: static;
+  border: 10px solid brown;
+  border-style: groove;
+}
+
+/*small screens*/
+@media screen and (max-width: 600px) {
+  nav {
+    background-image:  repeating-linear-gradient(brown, DarkRed);
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+    margin-right: auto; margin-left: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+  }
+
+  .grid-nav {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .grid-item {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .review1 {
+    grid-column: auto / span 2;
+  }
+
+  .review2 {
+    grid-column: auto / span 2;
+  }
+
+  .review3 {
+    grid-column: auto / span 2;
+  }
+
+  .picture {
+    grid-column: auto / span 1;
+  }
+
+  .full {
+    grid-column: auto / span 2;
+  }
+
+  .title {
+    grid-column: auto / span 2;
+    /*link to where background image was found: https://forums.odforce.net/topic/21240-detailed-swirling-maelstrom/*/
+    background-image: url(../Assets/title_background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .nav {
+    grid-column: auto / span 2;
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+  }
+}
+
+/*medium screens*/
+@media screen and (min-width: 600px) {
+  nav {
+    background-image: repeating-linear-gradient(brown, DarkRed);
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+    margin-right: auto; margin-left: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-nav {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .grid-item {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .review1 {
+    grid-column: auto / span 2;
+  }
+
+  .review2 {
+    grid-column: auto / span 2;
+  }
+
+  .review3 {
+    grid-column: auto / span 2;
+  }
+
+  .picture {
+    grid-column: auto / span 1;
+  }
+
+  .full {
+    grid-column: auto / span 2;
+  }
+
+  .title {
+    grid-column: auto / span 2;
+    background-image: url(../Assets/title_background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .nav {
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+  }
+}
+
+/*large screens*/
+@media screen and (min-width: 992px) {
+  /*navigation background*/
+  nav {
+    background-image: repeating-linear-gradient(brown, DarkRed);
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+    margin-right: auto; margin-left: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+
+  .grid-item {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .grid-nav {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .review1 {
+    grid-column: auto / span 2;
+    grid-row: 3 / span 2;
+  }
+
+  .review2 {
+    grid-column: auto / span 2;
+    grid-row: 6 / span 2;
+    color: black;
+  }
+
+  .review3 {
+    grid-column: auto / span 2;
+    grid-row: 9 / span 2;
+    color: black;
+
+  }
+
+  .picture {
+    grid-column: 3/ span 1;
+    grid-row: auto / span 1;
+  }
+
+  .full {
+    grid-column: auto / span 3;
+    grid-row: auto / span 1;
+  }
+
+  .title {
+    grid-column: auto / span 3;
+    grid-row: auto / span 1;
+    background-image: url(../Assets/title_background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+/*gives the navigation bar a different font*/
+  .nav {
+    font-family: 'Pirata One', cursive;
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+  }
+}
+
+/*editing headings*/
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px white;
+  font-family: 'Pirata One', cursive;
+  font-size: 64px;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-family: 'Pirata One', cursive;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+h3 {
+  font-family: 'Pirata One', cursive;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+/*assigning font to the paragraphs*/
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*getting rid of white space*/
+ body {
+   border-radius: 5px;
+   background-image: url(../Assets/paper.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+ }
+
+ /*creating a line for the webpage*/
+ hr {
+   border: none;
+   background-color: blue;
+   background-size: cover;
+   height: 1px;
+ }
+
+.background {
+  /*border: 8px solid DarkRed;*/
+  border-radius: 3px;
+}
+
+/*centering the footer*/
+.foot {
+  text-align: center;
+}
